@@ -1,14 +1,16 @@
-import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 
+import "./index.css";
+
 function App() {
   return (
-    <Header>
+    <Sidebar>
       <Routes>
         <Route path="/" exact element={<Home />} />
       </Routes>
-    </Header>
+    </Sidebar>
   );
 }
 
